@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="Hinh/favicon.ico"/> 
+<title>GeeK - PC/Console - Where players become gamers</title>
+<link href="HomePage.css" rel="stylesheet" type="text/css">
+<link href="article.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="Geek.js"></script>
+<script type="text/javascript" src="content.js"></script>
+
+</head>
+
+<body onload="picSwap();">
+
+<div class="background">
+<div class="container">
+
+<div class="top">
+	<div class="topcontainer">
+		<input type="text" placeHolder="Nhập từ khóa" class="search"  onkeyup="showResult();" id="key"/>
+        <span class="ltop">
+			<img src="Hinh/search.png"  onMouseDown="showResult();"/>
+		</span>
+         <form style="display:inline">
+             <input class="login" id="user" type="text" placeHolder="Tên đăng nhập"  maxlength="20" onkeyup="login();" />
+            <input class="login" id="pass" type="password" placeHolder="Password"  />
+			<input class="loginButt" type="submit" value="Login" onClick="return login();"/>
+         </form>       
+   
+        <span class="rtop">
+			<a href="https://www.facebook.com/" ><img src="Hinh/facebook.png"/></a>
+			<a href="http://www.vimeo.com/" ><img src="Hinh/vimeo.png"/></a>
+            <a href="https://www.yahoo.com/" ><img src="Hinh/yahoo.png"/></a>
+            <a href="http://store.steampowered.com/" ><img src="Hinh/steam.png"/></a>
+		</span>
+        
+    </div>
+</div>
+
+
+    
+<div class="header">
+	<a href="Geek.html"><img src="Hinh/Geekf.png" alt="Logo" class="logo"/></a>
+	<img src="Hinh/banner15.png" class="banner"/> 
+    <img src="Hinh/banner12.png" id="pic" onMouseOver="picStop(false);" onMouseOut="picStop(true)" class="banner2"/>
+<!-- end .header --></div>
+    
+<div class="menu" >
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li style="background-color:#C60000;"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<!-- BEGIN CONTENT-->   
+<div class="article">
+
+<div class="article-title">Kiều Trinh: Nữ game thủ Liên Minh Huyền Thoại xinh đẹp</div>
+<div class="article-author">SmiLe  - Theo TTVN / Trí Thức Trẻ | 10/10/2013</div>
+<div class="article-body">Cô nàng tên thật là Nguyễn Hoàng Kiều Trinh, đã từng gây sốt cộng đồng mạng bởi những bộ ảnh vô cùng xinh đẹp và đáng yêu.<br><br>
+Với vóc dáng chuẩn cùng gương mặt ưa nhìn, Kiều Trinh hiện là một trong những hot girl được cộng đồng mạng rất quan tâm. Ngoài ra, hot girl này còn rất yêu thích game Liên Minh Huyền Thoại.<br/><br>
+Kiều Trinh (1994) hiện đang sống tại TP.HCM và theo học ngành Quản trị du lịch, khách sạn tại trường ĐH Hoa Sen và CĐ Saigontourist.</div>
+</div>
+<div class="article-img">
+<img src="kieutrinh/pic2.jpg">
+<img src="kieutrinh/pic1.jpg">
+<img src="kieutrinh/pic3.jpg">
+<img src="kieutrinh/pic7.jpg">
+<img src="kieutrinh/pic4.jpg">
+<img src="kieutrinh/pic6.jpg">
+<img src="kieutrinh/pic5.jpg">
+</div>
+
+<div class="comment">
+
+<form name="form1" method="post">
+<ul style="padding:0px;">
+<li class="anonymous">
+	<div class="comment-title">Gửi bình luận nhanh</div>
+	<input type="text" placeholder="Họ tên" onKeyup="cmt();" id="name"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" placeholder="Email" onKeyup="cmt();" id="email"><br><br>
+    <textarea placeholder="Nội dung" class="cmt-line"></textarea>
+    <input class="butt" type="submit" onclick="return cmt();" value="Submit"/>
+</li>
+</form>
+
+<li class="member" style="padding-left:200px;">
+<div class="comment-title"><img style="margin-bottom:-2px" src="Hinh/star.png"/> Danh sách yêu thích</div>
+<input type="button" class="butt" value="Thêm trang này" onclick="WriteFiles();"  id="user"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="butt" value="Hiển thị các trang đã lưu" onclick="ReadFiles();" id="pass"><br><br>
+<div class="bookmark" >
+<span class="cmt-line" id="sub" style="font-family:Roboto;"></span>
+</div>
+<span id="bookmarkID" style="visibility:hidden"><a href='kieutrinh.html'>* Kieu Trinh: Nu game thu LMHT xinh dep - SmiLe</a><br/></span>
+</li>
+</ul>
+
+
+
+</div>
+
+<div class="menu">
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li style="background-color:#C60000;"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<div class="footer" >
+    	<ul>
+        	<li>Gee<span style="color:#d42020; font-weight:900;">K</span>.com &copy; Long Pham</li>
+            <li><img src="Hinh/add.png"/>:&nbsp;Lầu 2, tòa nhà Innovation, lô 24, Công viên phần mềm Quang Trung, P.Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh.</li>
+        	<li><img src="Hinh/tele.png"/>:&nbsp;01682087435</li>
+            <li><img src="Hinh/mail.png"/>:&nbsp;long.phamlp94@gmail.com</li>
+        </ul> 
+    <!-- end .footer --></div>
+
+
+</div>
+</div> 
+</div> 
+  
+
+
+
+</body>
+</html>

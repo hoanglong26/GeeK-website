@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="Hinh/favicon.ico"/> 
+<title>GeeK - PC/Console - Where players become gamers</title>
+<link href="HomePage.css" rel="stylesheet" type="text/css">
+<link href="article.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="Geek.js"></script>
+<script type="text/javascript" src="content.js"></script>
+
+</head>
+
+<body onload="picSwap();">
+
+<div class="background">
+<div class="container">
+
+<div class="top">
+	<div class="topcontainer">
+		<input type="text" placeHolder="Nhập từ khóa" class="search"  onkeyup="showResult();" id="key"/>
+        <span class="ltop">
+			<img src="Hinh/search.png"  onMouseDown="showResult();"/>
+		</span>
+        <form style="display:inline">
+             <input class="login" id="user" type="text" placeHolder="Tên đăng nhập"  maxlength="20" onkeyup="login();" />
+            <input class="login" id="pass" type="password" placeHolder="Password" />
+			<input class="loginButt" type="submit" value="Login" onClick="return login();"/>
+         </form>    
+   
+        <span class="rtop">
+			<a href="https://www.facebook.com/" ><img src="Hinh/facebook.png"/></a>
+			<a href="http://www.vimeo.com/" ><img src="Hinh/vimeo.png"/></a>
+            <a href="https://www.yahoo.com/" ><img src="Hinh/yahoo.png"/></a>
+            <a href="http://store.steampowered.com/" ><img src="Hinh/steam.png"/></a>
+		</span>
+        
+    </div>
+</div>
+
+
+    
+<div class="header">
+	<a href="Geek.html"><img src="Hinh/Geekf.png" alt="Logo" class="logo"/></a>
+	<img src="Hinh/banner15.png" class="banner"/> 
+    <img src="Hinh/banner12.png" id="pic" onMouseOver="picStop(false);" onMouseOut="picStop(true)" class="banner2"/>
+<!-- end .header --></div>
+    
+<div class="menu" >
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li style="background-color:#C60000;"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<!-- BEGIN CONTENT-->   
+<div class="article">
+<div class="article-title">Ao Shin: Thần Rồng Sét sắp xuất hiện trong thế giới Liên Minh Huyền Thoại?</div>
+
+<div class="article-author">Kaio  - Theo Trí Thức Trẻ | 15/07/2014</div>
+
+<div class="article-body">
+Có vẻ đây là một vị tướng chơi ở vị trí đường trên Liên Minh Huyền Thoại.<br><br>
+Trên thực tế, cái tên Ao Shin đã được nhắc tới từ khá lâu, thế nhưng cho tới thời điểm hiện tại, cộng đồng Liên Minh Huyền Thoại vẫn chưa được biết nhiều thông tin về vị tướng này.<br><br>
+Mới đây, trên trang chủ của mình, những nhà thiết kế tướng của Riot Game đã đăng tải một số thông tin hết sức thú vị. Theo đó, Liên Minh Huyền Thoại sắp đón chào một vị tướng đi top mới, có thể đó sẽ chính là Ao Shin!<br><br>
+</div>
+<div class="article-img">
+	<img src="Hinh/aoshin.jpg"/>
+</div>
+<div class="article-body">Cũng theo thông tin mà họ chia sẻ, Ao Shin sẽ là một "Thần Rồng Sét" mạnh mẽ ở vị trí đường trên. Tuy nhiên, những nhà thiết kế không tiết lộ cụ thể bộ kĩ năng của Ao Shin, có lẽ họ cần thêm một ít thời gian để hoàn thiện nó.<br><br>
+Liệu Ao Shin có thể đánh lại những "Hot Boy" đường trên hiện nay như Jax, Renekton, Shyvana... Hay đủ cứng để sống sót khi gặp đổi đường hay không? Hãy chờ câu trả lời tới từ Riot Games nhé!
+</div>
+</div>
+
+<div class="comment">
+
+<form name="form1" method="post">
+<ul style="padding:0px;">
+<li class="anonymous">
+	<div class="comment-title">Gửi bình luận nhanh</div>
+	<input type="text" placeholder="Họ tên" onKeyup="cmt();" id="name"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" placeholder="Email" id="email"><br><br>
+    <textarea placeholder="Nội dung" class="cmt-line" id="commentBox"></textarea>
+    <input class="butt" type="submit" onclick="return cmt();" value="Submit" id="comment"/>
+</li>
+</form>
+<li class="member" style="padding-left:200px;">
+<div class="comment-title"><img style="margin-bottom:-2px" src="Hinh/star.png"/> Danh sách yêu thích</div>
+<input type="button" class="butt" value="Thêm trang này" onclick="WriteFiles();" />&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" class="butt" value="Hiển thị các trang đã lưu" onclick="ReadFiles();"><br><br>
+<div class="bookmark" >
+<span class="cmt-line" id="sub" style="font-family:Roboto;"></span>
+</div>
+<span id="bookmarkID" style="visibility:hidden"><a href='aoshin.html'>* Ao Shin: Than Rong Set sap xuat hien trong the gioi LMHT - Kaio</a><br/></span>
+</li>
+</ul>
+
+
+
+</div>
+
+<div class="menu">
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li style="background-color:#C60000;"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<div class="footer" >
+    	<ul>
+        	<li>Gee<span style="color:#d42020; font-weight:900;">K</span>.com &copy; Long Pham</li>
+            <li><img src="Hinh/add.png"/>:&nbsp;Lầu 2, tòa nhà Innovation, lô 24, Công viên phần mềm Quang Trung, P.Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh.</li>
+        	<li><img src="Hinh/tele.png"/>:&nbsp;01682087435</li>
+            <li><img src="Hinh/mail.png"/>:&nbsp;long.phamlp94@gmail.com</li>
+        </ul> 
+    <!-- end .footer --></div>
+
+
+</div>
+</div> 
+</div> 
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="Hinh/favicon.ico"/> 
+<title>GeeK - Mobile - Where players become gamers</title>
+<link href="HomePage.css" rel="stylesheet" type="text/css">
+<link href="slider.css" rel="stylesheet" type="text/css">
+<link href="content.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="Geek.js"></script>
+
+</head>
+
+<body onload="picSwap();" >
+
+<div class="background">
+<div class="container" style="background-image:url(Hinh/test.jpg);">
+
+
+<div class="top">
+	<div class="topcontainer">
+		<input type="text" placeHolder="Nhập từ khóa" class="search"  onkeyup="showResult();" id="key"/>
+        <span class="ltop">
+			<img src="Hinh/search.png"  onMouseDown="showResult();"/>
+		</span>
+         <form style="display:inline">
+            <input class="login" id="user" type="text" placeHolder="Tên đăng nhập"  maxlength="20" onkeyup="login();" />
+            <input class="login" id="pass" type="password" placeHolder="Password" />
+			<input class="loginButt" type="submit" value="Login" onClick="return login();"/>
+         </form> 
+        <span class="rtop">
+			<a href="https://www.facebook.com/" ><img src="Hinh/facebook.png"/></a>
+			<a href="http://www.vimeo.com/" ><img src="Hinh/vimeo.png"/></a>
+            <a href="https://www.yahoo.com/" ><img src="Hinh/yahoo.png"/></a>
+            <a href="http://store.steampowered.com/" ><img src="Hinh/steam.png"/></a>
+		</span>       
+    </div>
+</div>
+   
+
+    
+<div class="header">
+	<a href="Geek.html"><img src="Hinh/Geekf.png" alt="Logo" class="logo"/></a>
+	<img src="Hinh/banner15.png" class="banner"/> 
+    <img src="Hinh/banner12.png" id="pic" onMouseOver="picStop(false);" onMouseOut="picStop(true)" class="banner2"/>
+<!-- end .header --></div>
+    
+    
+<div class="menu" >
+	<ul style=" lis">
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li class="mlink"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li style="background-color:#C60000;"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<div class="content">
+
+<div class="boxTag">
+<span class="tag">Tin nổi bật</span>
+</div>
+
+<div class="accordian">
+	<ul>
+		<li>
+			<div class="image_title">
+				<a href="bphone.html">Bphone: mua để chơi game, nên hay không?</a>
+                <div class="img-content" >Bphone vô cùng xứng đáng được xếp vào danh sách những thiết bị đáng sở hữu nhất để phục vụ cho nhu cầu chiến game</div>
+			</div>
+			<a href="bphone.html">
+				<img src="Hinh/bphone.jpg" height="320" width="643"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="echo.html">Echo Prime - Game "đỉnh" bất ngờ miễn phí trên iOS</a>
+               	<div class="img-content">Mới đây, game phiêu lưu hành động cũ mà hay Echo Prime từ hãng Robot Entertainment đã bất ngờ cho tải về miễn phí trên App Store.</div>
+			</div>
+			<a href="echo.html">
+				<img src="Hinh/echo.jpg"  height="320" width="643"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+            	<a href="idea.html">Idea - Game chặt chém tuyệt đẹp xứ Hàn xâm chiếm mobile</a>
+                <div class="img-content">Idea là dự án game mobile chặt chém mới nhất sắp được phát hành dưới bàn tay của hãng game nổi tiếng Hàn Quốc Netmarble.</div>
+			</div>
+			<a href="idea.html">
+				<img src="Hinh/idea.jpg" height="320" width="643"/>
+			</a>
+		</li>      
+		<li>
+			<div class="image_title">
+				<a href="cyper.html">Tại sao Nhật Bản là thị trường game mobile khó "ăn" nhất thế giới?</a>
+			    <div class="img-content">Thị trường game mobile Nhật Bản là miền đất "dữ" cho mọi nhà phát triển nước ngoài cho dù nó đang có giá trị lớn nhất thế giới..</div>
+            </div>
+			<a href="japan.html">
+				<img src="Hinh/japan.jpg" height="320" width="643"/>
+			</a>
+		</li>        
+        <li>
+			<div class="image_title">
+				<a href="war.html">This War of Mine - Phiên bản mobile của game sinh tồn sắp ra mắt</a>
+                <div class="img-content">This War of Mine là tựa game sinh tồn lấy bối cảnh chiến tranh khốc liệt được nhào nặn dưới bàn tay nhà phát triển 11 bit studios sẽ ra mắt tháng 7.</div>
+			</div>
+			<a href="war.html">
+				<img src="Hinh/war.jpg" height="320" width="643"/>
+			</a>
+		</li>     
+	</ul>
+</div>
+
+<div class="boxTag">
+<span class="tag">Mobile</span>
+</div>
+
+
+<div id="num1" class="startnews">
+<ul>
+	<li class="topper">
+		<a href="castle.html" title="BÁO ĐỘNG, CASTLE CRASHER TẤN CÔNG MOBILE!" ><img src="Hinh/castle.jpg"></a>
+		<div class="maintitle"><a title="BÁO ĐỘNG, CASTLE CRASHER TẤN CÔNG MOBILE!" href="castle.html">BÁO ĐỘNG, CASTLE CRASHER TẤN CÔNG MOBILE!</a></div>
+		<div class="maincontent">Nếu bạn đã từng bị mê hoặc bởi các tựa game Beat 'em up 2D vui nhộn thì Castle Crashers là 1 tựa game indie mà bạn không nên bỏ qua.</div>
+	</li>
+    
+   <li class="topper">
+		<a href="bphone.html" title="BPHONE: MUA ĐỂ CHƠI GAME, NÊN HAY KHÔNG?"><img src="Hinh/bphone.jpg"></a>
+		<div class="maintitle"><a href="bphone.html" title="BPHONE: MUA ĐỂ CHƠI GAME, NÊN HAY KHÔNG?" >BPHONE: MUA ĐỂ CHƠI GAME, NÊN HAY KHÔNG?</a></div>
+		<div class="maincontent">Bphone vô cùng xứng đáng được xếp vào danh sách những thiết bị đáng sở hữu nhất để phục vụ cho nhu cầu chiến game.</div>
+	</li>
+    
+    <li class="topper">
+		<a href="starwar.html" title="STAR WARS: UPRISING - GAME MOBILE ĂN THEO PHIM BOM TẤN STAR WARS SẮP RA MẮT"><img src="Hinh/starwar.jpg"></a>
+		<div class="maintitle"><a href="starwar.html" title="STAR WARS: UPRISING - GAME MOBILE ĂN THEO PHIM BOM TẤN STAR WARS SẮP RA MẮT">STAR WARS: UPRISING - GAME MOBILE ĂN THEO PHIM BOM TẤN STAR WARS SẮP RA MẮT</a></div>
+		<div class="maincontent">Star Wars: Uprising quả thực là một tin vui dành cho các game thủ yêu thích Star Wars trên các thiết bị di động..</div>
+	</li>
+    
+     <li class="topper">
+		<a href="idea.html" title="IDEA - GAME CHẶT CHÉM TUYỆT ĐẸP XỨ HÀN XÂM CHIẾM MOBILE"><img src="Hinh/idea.jpg"></a>
+		<div class="maintitle"><a href="idea.html" title="IDEA - GAME CHẶT CHÉM TUYỆT ĐẸP XỨ HÀN XÂM CHIẾM MOBILE">IDEA - GAME CHẶT CHÉM TUYỆT ĐẸP XỨ HÀN XÂM CHIẾM MOBILE</a></div>
+		<div class="maincontent">Idea là dự án game mobile chặt chém mới nhất sắp được phát hành dưới bàn tay của hãng game nổi tiếng Hàn Quốc Netmarble.</div>
+	</li>
+</ul>
+</div>
+
+
+
+<div id="num2" class="newsupdate">
+<ul>
+	<li class="topper">
+		<a href="echo.html" title="ECHO PRIME - GAME CHẶT CHÉM ĐÃ TAY BẤT NGỜ MIỄN PHÍ TRÊN IOS" ><img src="Hinh/echo.jpg"></a>
+		<div class="maintitle"><a title="ECHO PRIME - GAME CHẶT CHÉM ĐÃ TAY BẤT NGỜ MIỄN PHÍ TRÊN IOS" href="echo.html">ECHO PRIME - GAME "CHẶT CHÉM" ĐÃ TAY BẤT NGỜ MIỄN PHÍ TRÊN IOS</a></div>
+		<div class="maincontent">Mới đây, game phiêu lưu hành động cũ mà hay Echo Prime từ hãng Robot Entertainment đã bất ngờ cho tải về miễn phí trên App Store.</div>
+   </li>
+    
+   <li class="topper">
+		<a href="japan.html" title="TẠI SAO NHẬT BẢN LÀ THỊ TRƯỜNG GAME MOBILE KHÓ ĂN NHẤT THẾ GIỚI?"><img src="Hinh/japan.jpg"></a>
+		<div class="maintitle"><a href="japan.html" title="TẠI SAO NHẬT BẢN LÀ THỊ TRƯỜNG GAME MOBILE KHÓ ĂN NHẤT THẾ GIỚI?" >TẠI SAO NHẬT BẢN LÀ THỊ TRƯỜNG GAME MOBILE KHÓ "ĂN" NHẤT THẾ GIỚI?</a></div>
+		<div class="maincontent">Thị trường game mobile Nhật Bản là miền đất "dữ" cho mọi nhà phát triển nước ngoài cho dù nó đang có giá trị lớn nhất thế giới.</div>
+	</li>
+    
+    <li class="topper">
+		<a href="her.html" title="HER STORY - GAME KINH DỊ ĐỘC ĐÁO VÀ KỲ LẠ NHẤT THẾ GIỚI"><img src="Hinh/her.jpg"></a>
+		<div class="maintitle"><a href="her.html" title="HER STORY - GAME KINH DỊ ĐỘC ĐÁO VÀ KỲ LẠ NHẤT THẾ GIỚI">HER STORY - GAME KINH DỊ ĐỘC ĐÁO VÀ KỲ LẠ NHẤT THẾ GIỚI</a></div>
+		<div class="maincontent">Her Story là game kinh dị sắp sẽ được phát hành trong tháng 6 này dưới bàn tay Sam Barlow - người từng đảm nhiệm các phần của Silent Hill trứ danh.</div>
+	</li>
+    
+     <li class="topper">
+		<a href="war.html" title="THIS WAR OF MINE - PHIÊN BẢN MOBILE CỦA GAME SINH TỒN SẮP RA MẮT"><img src="Hinh/war.jpg"></a>
+		<div class="maintitle"><a href="war.html" title="THIS WAR OF MINE - PHIÊN BẢN MOBILE CỦA GAME SINH TỒN SẮP RA MẮT">THIS WAR OF MINE - PHIÊN BẢN MOBILE CỦA GAME SINH TỒN SẮP RA MẮT</a></div>
+		<div class="maincontent">This War of Mine là tựa game sinh tồn lấy bối cảnh chiến tranh khốc liệt được nhào nặn dưới bàn tay nhà phát triển 11 bit studios sẽ ra mắt tháng 7.</div>
+	</li>
+   
+</ul>
+</div>
+
+
+<div id="num3" class="newsupdate">
+<ul>
+	<li class="topper">
+		<a href="dotacomp.html" title="DOTA 2: NHỮNG ĐỘI HÌNH DỊ NHẤT TỪNG XUẤT HIỆN TRONG LỊCH SỬ" ><img src="Hinh/dotacomp.jpg"></a>
+		<div class="maintitle"><a title="DOTA 2: NHỮNG ĐỘI HÌNH DỊ NHẤT TỪNG XUẤT HIỆN TRONG LỊCH SỬ" href="dotacomp.html">DOTA 2: NHỮNG ĐỘI HÌNH DỊ NHẤT TỪNG XUẤT HIỆN TRONG LỊCH SỬ</a></div>
+		<div class="maincontent">Cứ mỗi một phiên bản mới hay qua mỗi mùa DOTA 2 The International, chúng ta đều chứng kiến những chiến thuật mới lạ, độc đáo từ các đội.</div>
+   </li>
+    
+   <li class="topper">
+		<a href="overwatch.html" title="BOM TẤN OVERWATCH THAM VỌNG TRỞ THÀNH BỘ MÔN ESPORTS"><img src="Hinh/overwatch.png"></a>
+		<div class="maintitle"><a href="overwatch.html" title="BOM TẤN OVERWATCH THAM VỌNG TRỞ THÀNH BỘ MÔN ESPORTS" >BOM TẤN OVERWATCH THAM VỌNG TRỞ THÀNH BỘ MÔN ESPORTS</a></div>
+		<div class="maincontent">Có thể nói, Blizzard đã làm một điều chưa từng có trong lịch sử của hãng khi phát triển Overwatch.</div>
+	</li>
+    
+    <li class="topper">
+		<a href="faker.html" title="LIÊN MINH HUYỀN THOẠI - FAKER: KẺ BẤT KHẢ CHIẾN BẠI"><img src="Hinh/faker.png"></a>
+		<div class="maintitle"><a href="faker.html" title="LIÊN MINH HUYỀN THOẠI - FAKER: KẺ BẤT KHẢ CHIẾN BẠI">LIÊN MINH HUYỀN THOẠI - FAKER: KẺ BẤT KHẢ CHIẾN BẠI</a></div>
+		<div class="maincontent">Nếu Faker ở vị trí thứ 2, sẽ không có ai xứng đáng với số 1 Liên Minh Huyền Thoại thế giới.</div>
+	</li>
+    
+     <li class="topper">
+		<a href="cyper.html" title="CYBERPUNK 2077 SẼ CÒN BÍ MẬT CHO TỚI NĂM 2017"><img   src="Hinh/cyper.jpg"></a>
+		<div class="maintitle"><a href="cyper.html" title="CYBERPUNK 2077 SẼ CÒN BÍ MẬT CHO TỚI NĂM 2017" style="color:#000" >CYBERPUNK 2077 SẼ CÒN BÍ MẬT CHO TỚI NĂM 2017</a></div>
+		<div class="maincontent">Năm nay và cả 2016 sẽ chỉ dành cho The Witcher 3, sau đó mới đến Cyberpunk 2077 - hãng phát triển CD Projekt Red cho biết.</div>
+	</li>
+</ul>
+</div>
+
+
+
+<div class="navigator">
+    <ul>
+    	<li class="pageBegin" id="previous" onclick="hide(4,6);"><a >&laquo;</a></li>
+        
+        <li class="pageBegin" id="page1"><a  href="#num1">Trang 1</a></li>
+        <li class="pageBegin" id="page2"><a  href="#num2">Trang 2</a></li>
+        <li class="pageBegin" id="page3"><a  href="#num3">Trang 3</a></li>
+        
+        <li class="pageBegin" id="more"  onclick="expand(7,9);"><a>&raquo;</a></li>
+        
+        <li id="page4" class="pageAfter"><a  href="#num1">Trang 4</a></li>
+        <li id="page5" class="pageAfter"><a  href="#num2">Trang 5</a></li>
+        <li id="page6" class="pageAfter"><a  href="#num3">Trang 6</a></li>
+        
+    </ul>
+</div>
+
+
+</div>
+
+<div class="menu">
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li class="mlink"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li style="background-color:#C60000;"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<div class="footer" >
+    	<ul>
+        	<li>Gee<span style="color:#d42020; font-weight:900;">K</span>.com &copy; Long Pham</li>
+            <li><img src="Hinh/add.png"/>:&nbsp;Lầu 2, tòa nhà Innovation, lô 24, Công viên phần mềm Quang Trung, P.Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh.</li>
+        	<li><img src="Hinh/tele.png"/>:&nbsp;01682087435</li>
+            <li><img src="Hinh/mail.png"/>:&nbsp;long.phamlp94@gmail.com</li>
+        </ul> 
+    <!-- end .footer --></div>
+  
+<!-- end .container --></div>
+</div>
+
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="Hinh/favicon.ico"/> 
+<title>GeeK - Đăng kí - Where players become gamers</title>
+<link href="HomePage.css" rel="stylesheet" type="text/css">
+<link href="article.css" rel="stylesheet" type="text/css">
+<link href="Form.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="Geek.js"></script>
+<script type="text/javascript" src="form.js"></script>
+
+</head>
+
+<body onload="picSwap();">
+
+<div class="background">
+<div class="container" style="background-image:url(Hinh/test.jpg);">
+
+
+<div class="top">
+	<div class="topcontainer">
+		<input type="text" placeHolder="Nhập từ khóa" class="search"  onkeyup="showResult();" id="key"/>
+        <span class="ltop">
+			<img src="Hinh/search.png"  onMouseDown="showResult();"/>
+		</span>
+          <form style="display:inline">
+             <input class="login" id="user" type="text" placeHolder="Tên đăng nhập"  maxlength="20" onkeyup="login();" />
+            <input class="login" id="pass" type="password" placeHolder="Password"  />
+			<input class="loginButt" type="submit" value="Login" onClick="return login();"/>
+         </form>
+        <span class="rtop">
+			<a href="https://www.facebook.com/" ><img src="Hinh/facebook.png"/></a>
+			<a href="http://www.vimeo.com/" ><img src="Hinh/vimeo.png"/></a>
+            <a href="https://www.yahoo.com/" ><img src="Hinh/yahoo.png"/></a>
+            <a href="http://store.steampowered.com/" ><img src="Hinh/steam.png"/></a>
+		</span>       
+    </div>
+</div>
+ 
+
+    
+<div class="header">
+	<a href="Geek.html"><img src="Hinh/Geekf.png" alt="Logo" class="logo"/></a>
+	<img src="Hinh/banner15.png" class="banner"/> 
+    <img src="Hinh/banner12.png" id="pic" onMouseOver="picStop(false);" onMouseOut="picStop(true)" class="banner2"/>
+<!-- end .header --></div>
+    
+<div class="menu" >
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li class="mlink"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li style="background-color:#C60000;"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<div> 
+<form id="form1" name="f" method="post" class="reg" >
+  <table class="regtable" cellpadding="5px" cellspacing="0px">
+  	<tr>
+      <td  colspan="2" class="tableName" ><div align="center"> 
+           Đăng kí thành viên
+        </div></td>
+    </tr>
+  	<tr>
+      <td class="tableBody">Tên tài khoản</td>
+      <td><input type="text"  placeholder="Tên tài khoản" name="txt3" id="txt3" />
+        <a class="star" title="Tên tài khoản dùng để đăng nhập và phải dài 5-32 kí tự, không có khoảng trắng">*</a></td>
+    </tr>
+    <tr>
+      <td class="tableBody" >Mật khẩu</td>
+      <td>
+        <input type="password" placeholder="Mật khẩu" name="txt4" id="txt4" />
+       <a class="star" title="Password phải dài trên 6 kí tự. Trong đó phải có 1 kí tự chữ hoa, 1 chữ thường và 1 chữ số"> *</a></td>
+    </tr>
+    <tr>
+      <td class="tableBody">Nhập lại mật khẩu</td>
+      <td>
+        <input type="password" placeholder="Mật khẩu" id="txt4.5" />
+       <a class="star" title="Yêu cầu giống với password phía trên"> *</a></td>
+    </tr>
+    <tr>
+      <td class="tableBody">Email</td>
+      <td>
+        <input type="email" placeholder="Email" name="txt5" id="txt5" />
+         <a class="star" title="Email phải có định dạng xxx@abc.xyz để nhận mã kích hoạt và thông tin từ admin">*</a></td>
+    </tr>
+    
+    <tr>
+      <td class="tableBody">Họ và Tên</td>
+      <td>
+        <input name="txt1" type="text" id="txt1"  placeholder="Họ tên" />
+         <a class="star" title="Tên hiển thị khi bình luận">*</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableBody">Giới tính</td>
+      <td><input name="gt" type="radio" id="r1" value="radio" checked="checked" />
+        Nam
+        <input type="radio" name="gt" id="r2" value="radio2" />
+        Nữ</td>
+    </tr>
+    <tr>
+      <td class="tableBody">Ngày sinh</td>
+      <td>
+      	<select class="month">
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+          <option value="4">Apr</option>
+          <option value="5">May</option>
+          <option value="6">Jun</option>
+          <option value="7">Jul</option>
+          <option value="8">Aug</option>
+          <option value="9">Sep</option>
+          <option value="10">Oct</option>
+          <option value="11">Nov</option>
+          <option value="12">Dec</option>
+        </select>
+        
+        <input type="text" placeholder="DD" id="ngay" class="birth"/><input type="text" placeholder="YYYY" id="nam" class="birth" />
+         <a class="star" title="Điền đúng ngày sinh để nhận những phần quà từ chúng tôi vào dịp sinh nhật của bạn">*</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableBody">Nơi sinh sống</td>
+      <td><select name="nn" id="nn">
+          <option value="1">Hồ Chí Minh</option>
+          <option value="2">Hà Nội</option>
+          <option value="3">Tỉnh khác</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+      <td class="tableBody">Thể loại game<br> yêu thích <a class="star" title="Tùy chọn. Có thể bỏ trống.">(i)</a></td>
+      <td><input  type="checkbox" name="chk1" id="chk1" />
+        Hành động&nbsp;&nbsp; 
+        <input type="checkbox" name="chk2" id="chk2" />
+        Giải đố  <br>
+        <input type="checkbox" name="chk3" id="chk3" />
+        RPG &nbsp;&nbsp;
+        <input type="checkbox" name="chk4" id="chk4" />
+        Thể thao &nbsp;&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td colspan="2" >
+      		<div align="center"><input type="submit" class="subbutt" value="Submit" onclick="return checkForm()" /> 
+            <input type="submit" class="subbutt" value="Reset form" onclick="tailai();" /></div>
+      </td>
+    </tr>
+  </table>
+</form>
+</div>
+ 
+<div class="menu">
+	<ul>
+    		<li>|</li>
+			<li class="mlink"><a href="Geek.html">Home</a></li>
+        		<li>|</li>
+			<li class="mlink"><a href="PcConsole.html">PC/Console</a></li>
+         		<li>|</li>
+			<li class="mlink"><a href="Mobile.html">Mobile</a></li>
+         		<li>|</li>
+			<li style="background-color:#C60000;"><a href="Contact.html">Đăng Kí</a></li>
+            <li>|</li>
+	</ul>
+</div>
+
+<div class="footer" >
+    	<ul>
+        	<li>Gee<span style="color:#d42020; font-weight:900;">K</span>.com &copy; Long Pham</li>
+            <li><img src="Hinh/add.png"/>:&nbsp;Lầu 2, tòa nhà Innovation, lô 24, Công viên phần mềm Quang Trung, P.Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh.</li>
+        	<li><img src="Hinh/tele.png"/>:&nbsp;01682087435</li>
+            <li><img src="Hinh/mail.png"/>:&nbsp;long.phamlp94@gmail.com</li>
+        </ul> 
+    <!-- end .footer --></div>
+     
+<!-- end .container --></div>
+</div> 
+  
+
+</body>
+</html>

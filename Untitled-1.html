@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+function validateForm(f) {
+  if (f.value == "") {
+     alert("Please enter some text into the feedback field");
+     return false;
+  }
+  else
+     return true;
+  }
+//-->
+</script>
+</head>
+<body>
+<pre>
+<form name="myForm" method="post" action="http://www.java2s.com" >
+Full Name: <input type="text" size=30 name="persons_name"><br>
+Feedback : <textarea name="feedback" rows=5 cols=50></textarea><p>
+<input type="submit" onclick="validateForm(myForm.feedback)" value="Send Data">
+</form>
+</pre>
+</body>
+</html>
+
